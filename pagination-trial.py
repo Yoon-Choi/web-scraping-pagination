@@ -17,7 +17,7 @@ print("webpage response : ", html.status_code)
 
 # pagination : this website is consist of 91 pages
 search_result = []
-for x in range(1, 91):
+for x in range(1, 2):
     url = 'https://en.zalando.de/premium-men-clothing/?p='
     r = requests.get(url+str(x))
     soup = BeautifulSoup(r.content, 'html.parser')
