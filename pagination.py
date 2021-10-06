@@ -20,7 +20,7 @@ search_result = []
 for x in range(1, 2):
     url = 'https://en.zalando.de/premium-men-clothing/?p='
     r = requests.get(url+str(x))
-    soup = BeautifulSoup(r.content, 'html.parser')
+    soup = BeautifulSoup(r.content, 'lmxl')
     content = soup.find_all('div', class_="_0xLoFW _78xIQ- EJ4MLB JT3_zV")
     print(content)
     for property in content:

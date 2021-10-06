@@ -4,5 +4,6 @@ config
 /config.json
 /.idea/
 .iml
-
+/onepage-search_result.csv
+/search_result.csv
 

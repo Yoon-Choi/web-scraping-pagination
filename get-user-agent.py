@@ -19,12 +19,9 @@ def Get_ip_user_agent(soup):
       return ip, user_agent
 
 
-page = requests.get('http://whatsmyuseragent.org/')
-soup = BeautifulSoup(page.text, 'lxml')
-ip, user_agent = Get_ip_user_agent(soup)
 
-print(ip, user_agent)
-#ip, useragent from website
+
+#ip, useragent
 page = requests.get('http://whatsmyuseragent.org/')
 soup = BeautifulSoup(page.text, 'lxml')
 ip, user_agent = Get_ip_user_agent(soup)
